@@ -1,0 +1,184 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+
+b{
+    font-size: 4rem;
+    color: v.$lila;
+}
+
+.navItems{
+    display: flex;
+
+}
+.navItems li{
+    list-style: none;
+    margin: 0 0.9rem;
+}
+
+.navItems li a{
+    font-size: 2.1rem;
+    color: v.$negroClaro;
+    letter-spacing: 0.18rem;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navItems li a:hover,
+.links a:hover {
+    color: v.$lila;;
+}
+
+.links a{
+    font-size: 1.8rem;
+    color: v.$negroClaro;
+    margin: 1.5rem 1.8rem;
+
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.wrapper::before{
+    position: absolute;
+    content: '';
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    left:-12%;
+    top: 40%;
+    background: linear-gradient(45deg,v.$lila,pink);
+    animation: object1 6s linear infinite;
+}
+
+.wrapper::after{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg,v.$lila,pink);
+    animation: object2 6s linear infinite;
+}
+
+@keyframes object1 {
+    50%{
+        left: -13%;
+        top: 41%;
+    }
+    100% { -webkit-transform: rotate(0deg); }
+
+    
+}
+
+@keyframes object2{
+    50%{
+        left: 35%;
+        top: 10%;
+    }
+    100% { -webkit-transform: rotate(0deg); }
+
+    
+}
+.cols{
+    width: 50%;
+}
+
+.cols0{
+    width: 50%;
+    z-index: 5;
+
+}
+.topline{
+    display: block;
+    position: relative;
+    font-size: 2.1rem;
+    color: v.$negroClaro;
+
+}
+
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 0.25rem;
+    width: 2.825rem;
+    bottom: 0.6rem;
+    background-color: v.$lila;
+
+
+}
+h1{
+    display: block;
+    font-size: 7em;
+    font-weight: 900;
+    color: v.$negroClaro;
+    margin: 1rem;
+}
+
+.multiText{
+    color: v.$lila;
+    text-transform: capitalize;
+}
+p{
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: v.$negroClaro;
+}
+
+.btns{
+    width: 100%;
+    position: relative;
+    left: 9.375rem;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: v.$negroClaro;
+    padding:8px 4px ;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.4); /*Sombreado*/
+
+}
+
+button:hover{
+    background-color: v.$lila;
+}
+
+.imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imgbox img{
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%,-10%) rotate(-25deg);
+    width: 160%;
+    filter: saturate(200%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate {
+    50%{
+        top: 49%;
+        left: 51%;
+        width: 165%;
+    }
+    100% { -webkit-transform: rotate(0deg); }
+
+    
+}
