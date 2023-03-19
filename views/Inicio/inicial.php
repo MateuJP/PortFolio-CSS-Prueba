@@ -1,19 +1,7 @@
 <div class="container">
-    <nav>
-        <div class="logo">folio<b>.</b></div>
-        <ul class="navItems">
-            <li><a href="/">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">skills</a></li>
-            <li><a href="#">Blog</a></li>
-        </ul>
-        <div class="links">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-
-        </div>
-    </nav>
+    <?php
+    include_once __DIR__ .'/../header.php';
+    ?>
 
     <div class="wrapper">
         <div class="cols cols0">

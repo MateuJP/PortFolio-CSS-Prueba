@@ -9,4 +9,8 @@ class InicioController {
     public static function contactar(Router $router){
         $router->render('Inicio/contactar');
     }
+
+    public static function aboutMe(Router $router){
+        $router->render('Inicio/sobreMi');
+    }
 }

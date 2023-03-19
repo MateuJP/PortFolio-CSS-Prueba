@@ -1,0 +1,232 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+
+/* Estilos generales */
+
+  /* Estilos para el menú de navegación */
+  
+  .menu-navegacion {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  
+  .menu-navegacion ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .menu-navegacion li {
+    margin-left: 20px;
+    list-style: none;
+  }
+  
+  .menu-navegacion a {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .formacion-gustos{
+    display: flex;
+    justify-content: space-between;
+  }
+  .about::before{
+    position: absolute;
+    content: '';
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    left:-12%;
+    top: 40%;
+    background: linear-gradient(45deg,v.$lila,pink);
+    animation: object1 6s linear infinite;
+}
+
+.about::after{
+  position: absolute;
+  content: '';
+  height: 400px;
+  width: 400px;
+  border-radius: 85%;
+  left:88%;
+  top: 40%;
+  background: linear-gradient(45deg,v.$lila,pink);
+  animation: object21 6s linear infinite;
+}
+
+  .menu-navegacion a:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Estilos para el cuerpo de la página */
+  
+  .cuerpo {
+    max-width: 900px;
+    margin: 80px auto 40px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para la sección de descripción personal */
+  
+  .descripcion-personal {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .descripcion-personal h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .descripcion-personal p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  /* Estilos para la sección de estudios */
+  
+  .estudios {
+    margin-bottom: 40px;
+  }
+  
+  .estudios h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .estudios ul {
+    font-size: 16px;
+    line-height: 1.6;
+    list-style: none;
+    margin-left: 0;
+  }
+  
+  .estudios li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .estudios li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #333;
+  }
+  
+  /* Estilos para la sección de gustos */
+  
+  .gustos {
+    margin-bottom: 40px;
+  }
+  
+  .gustos h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .gustos ul {
+    font-size: 16px
+  }
+  /* Estilos para la sección de portafolio */
+
+.portafolio {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+  }
+  
+  .portafolio h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .portafolio p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+  }
+  
+  .lista-portafolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .item-portafolio {
+    margin: 20px;
+  }
+  
+  .item-portafolio a {
+    display: block;
+    position: relative;
+  }
+  
+  .item-portafolio img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .item-portafolio h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .item-portafolio a:hover h3 {
+    opacity: 1;
+  }
+  
+  @keyframes object1 {
+    50%{
+        left: -13%;
+        top: 41%;
+    }
+    100% { -webkit-transform: rotate(0deg); }
+
+    
+}
+
+@keyframes object21{
+  50%{
+    left: 84%;
+    top: 41%;
+}
+100% { -webkit-transform: rotate(0deg); }
+
+    
+}

@@ -1,0 +1,56 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+
+.login{
+    display: grid;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    width: auto;
+
+}
+.formulario.login{
+    width: 55rem;
+    height: 30rem;
+    background-color: darken($color: v.$azulOscuro, $amount: 0);
+    margin-top: 5rem;
+}
+
+.campo.login{
+ 
+
+    label{
+        color: v.$blanco;
+        font-weight: v.$bold;
+        flex:0 0  10rem;
+    }
+    input{
+        width: 35rem;
+        height: 2.5rem;
+    
+        border: none;
+        border-bottom: 2px solid white;
+        border-radius: 0rem;
+        
+    }
+    
+}
+.boton.login{
+    margin-top: 1.5rem;
+    display: flex;
+    width: 35rem;
+    height: 2rem;
+    border-radius: 1rem;
+    input{
+        background-color: darken(v.$verdeClaro,0);
+        width: 35rem;
+    }
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
+        
+}
+
