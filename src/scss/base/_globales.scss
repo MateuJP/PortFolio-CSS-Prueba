@@ -13,12 +13,14 @@ html {
     font-family: v.$fuente_principal;
 }
 body {
-    overflow: hidden;
+    height: 100%;
+    overflow: auto;
+    background-color: #f3f5f8 ;
+
 }
 .container {
     width: 100%;
     min-height: 100vh;
-    background-color: #f3f5f8 ;
 }
 
 

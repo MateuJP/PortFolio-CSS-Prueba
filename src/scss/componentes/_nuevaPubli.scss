@@ -1,0 +1,78 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+
+.contenedor.publicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .publicación {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include m.tablet{
+        width: 100rem;
+        height: 65rem;
+    }
+    width: 55rem;
+    height: 65rem;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .publicación input[type="text"],
+  .publicación textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 1rem;
+    font-family: sans-serif;
+  }
+  
+  .publicación textarea {
+    height: 100%;
+    text-decoration: none;
+
+  }
+  
+  .boton.publicar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .boton.publicar input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+
+  }
+  
+  .boton.publicar input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+  .campo.publicacion{
+    width: 100%;
+    padding: 0.5rem;
+
+    textarea{
+        height: 50rem;
+    }
+  }
+  

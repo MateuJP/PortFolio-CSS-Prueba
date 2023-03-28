@@ -5,7 +5,7 @@
             <li><a href="/">home</a></li>
             <li><a href="/about">about</a></li>
             <li><a href="#">skills</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="/blog">Blog</a></li>
         </ul>
         <div class="links">
             <a href="#"><i class="fab fa-linkedin"></i></a>

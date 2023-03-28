@@ -27,6 +27,10 @@ $router->POST('/login',[LoginController::class,'login']);
 //BLOG
 
 $router->get('/publicar',[BlogController :: class,'publicar']);
+$router->post('/publicar',[BlogController :: class,'publicar']);
+
+$router->get('/blog',[BlogController :: class,'ver']);
+
 
 
 

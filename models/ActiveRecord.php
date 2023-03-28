@@ -132,7 +132,6 @@ class ActiveRecord {
         $atributos = $this->sanitizarAtributos();
 
         $atributos[static::$columnaId]=self::$db->insert_id;
-        //debuguear($atributos);
         // Insertar en la base de datos
         $query = " INSERT INTO " . static::$tabla . " ( ";
         $query .= join(', ', array_keys($atributos));

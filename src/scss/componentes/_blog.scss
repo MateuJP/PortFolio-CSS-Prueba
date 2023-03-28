@@ -1,0 +1,38 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+
+.irPubli{
+    text-decoration: none;
+}
+.irPubli a:hover{
+    background-color: darken(v.$azul,10);
+
+}
+
+.publi {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 5rem;
+  }
+  
+  .publi h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .dateTime {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    justify-content: flex-end; /* alinea los elementos a la derecha */
+    align-items: center; /* centrar verticalmente */
+    width: 100%; /* asegura que el contenedor ocupe todo el ancho disponible */
+  }
+  
+  .dateTime p {
+    display: inline-block;
+    width: 10%;
+    margin-left: 10px; /* añade un margen a ambos elementos p */
+  }
+  
+  
