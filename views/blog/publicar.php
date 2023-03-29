@@ -9,7 +9,7 @@ use Model\Autor;
     ?>
 
     <div class="contenedor publicacion">
-        <form class="publicación" method="POST" action="/publicar">
+        <form class="publicación" method="POST" action="/publicar" enctype="multipart/form-data">
             
             <div class="campo publicacion">
                 <input type="text" placeholder="Título" name="titulo">

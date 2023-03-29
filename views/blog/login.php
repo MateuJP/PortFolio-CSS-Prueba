@@ -2,6 +2,7 @@
     <?php
     include_once __DIR__ .'/../header.php';
     ?>
+    <div class="about">
 
     <div class="login">
         <form class="formulario login" method="POST" action="/login">
@@ -19,5 +20,6 @@
                 <input type="submit" value="Iniciar Sesión">
             </div>
         </form>
+    </div>
     </div>
 </div>

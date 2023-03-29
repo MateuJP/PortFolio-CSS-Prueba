@@ -13,7 +13,7 @@
 .formulario.login{
     width: 55rem;
     height: 30rem;
-    background-color: darken($color: v.$azulOscuro, $amount: 0);
+    background-color: darken($color: v.$blanco, $amount: 15);
     margin-top: 5rem;
 }
 
@@ -21,7 +21,7 @@
  
 
     label{
-        color: v.$blanco;
+        color: v.$lila;
         font-weight: v.$bold;
         flex:0 0  10rem;
     }
@@ -43,7 +43,7 @@
     height: 2rem;
     border-radius: 1rem;
     input{
-        background-color: darken(v.$verdeClaro,0);
+        background-color: lighten(v.$lila,10);
         width: 35rem;
     }
     &:hover {

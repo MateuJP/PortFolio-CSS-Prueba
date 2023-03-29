@@ -30,6 +30,7 @@ $router->get('/publicar',[BlogController :: class,'publicar']);
 $router->post('/publicar',[BlogController :: class,'publicar']);
 
 $router->get('/blog',[BlogController :: class,'ver']);
+$router->get('/articulo',[BlogController :: class,'articulo']);
 
 
 

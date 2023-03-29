@@ -3,9 +3,14 @@ document.addEventListener('DOMContentLoaded',function(){
 });
 
 function iniciarApp(){
-
+   mostrarAlerta();
     mostrarImagen();
     
+}
+
+function mostrarAlerta(){
+  const mensaje="Recurrda que si quieres poner una imagen, tienes que poner imagen_numero donde numero empieza por 0\n Recuerda que para poner espacios tiene que poner salto"
+  alert(mensaje);
 }
 function mostrarImagen() {
     const imagesInput = document.querySelector('.numImagenes');
@@ -21,6 +26,7 @@ function mostrarImagen() {
         
         const input = document.createElement('input');
         input.type = 'file';
+        input.accept='imges/jpg, imge/png, image/jpeg'
         input.name = 'imagen_' + i;
         input.placeholder = 'Imagen ' + i
         form.appendChild(input);
